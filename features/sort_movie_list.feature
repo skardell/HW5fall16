@@ -23,7 +23,13 @@ Background: movies have been added to database
 
 Scenario: sort movies alphabetically
   # your scenario here
+  When I have opted to see sort Movies Alphabetically
+  Then I should see Alladin before Amelie
+  
+  
+  
 
 Scenario: sort movies in increasing order of release date
   # your scenario here
-
+  When I have opted to see sort Movies by release date
+  Then I should see Raiders of the Lost Ark before The Terminator
